@@ -12,6 +12,7 @@ namespace LoanApplication.Web.Models
         {
             _unitOfWork = unitOfWork;
         }
+
         public bool VerifySalary(LoanApplicant loanApplicant)
         {
             var salary = _unitOfWork.LoanApplications.GetByID(loanApplicant.Id);

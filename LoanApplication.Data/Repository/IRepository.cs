@@ -60,9 +60,9 @@ namespace LoanApplication.Data.Repository
             return dbSet.Find(id);
         }
 
-        public virtual void Insert(TEntity entity)
+        public virtual TEntity Insert(TEntity entity)
         {
-            dbSet.Add(entity);
+           return dbSet.Add(entity);
         }
 
         public virtual void Delete(object id)
@@ -97,7 +97,7 @@ namespace LoanApplication.Data.Repository
         TEntity GetByID(object id);
         IEnumerable<TEntity> GetWithRawSql(string query,
             params object[] parameters);
-        void Insert(TEntity entity);
+        TEntity Insert(TEntity entity);
         void Update(TEntity entityToUpdate);
     }
 }

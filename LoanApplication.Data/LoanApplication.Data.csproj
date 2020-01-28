@@ -51,7 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBContext\LoanApplicationDbContext.cs" />
+    <Compile Include="Context\LoanApplicationDbContext.cs" />
     <Compile Include="Migrations\202001271550504_Initial.cs" />
     <Compile Include="Migrations\202001271550504_Initial.designer.cs">
       <DependentUpon>202001271550504_Initial.cs</DependentUpon>
